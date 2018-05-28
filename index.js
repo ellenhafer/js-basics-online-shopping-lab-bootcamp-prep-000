@@ -84,6 +84,8 @@ function placeOrder(cardNumber) {
     return "Sorry, we don't have a credit card on file for you";
   }
   //otherwise
+  else {
   //empty cart array
   // return total cost and credit card number
+  }
 }
