@@ -85,12 +85,10 @@ function placeOrder(cardNumber) {
   }
   //otherwise
   else {
-    // store total in variable
-    var total = total();
-    console.log(total);
+    // return total cost and credit card number
+    console.log(`Your total cost is $${total}, which will be charged to the card ${cardNumber}.`);
     // empty cart array
     cart = [];
-    // return total cost and credit card number
-    return `Your total cost is $${total}, which will be charged to the card ${cardNumber}.`
+    return;
   }
 }
