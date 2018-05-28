@@ -68,7 +68,7 @@ function removeFromCart(item) {
   for(let i = 0; i < cart.length; i++) {
     // if itemName === item
     if(cart[i].itemName === item){
-      console.log("Item is in cart");
+      return "Item is in cart";
       // remove item from cart array
       // return updated cart
     }
