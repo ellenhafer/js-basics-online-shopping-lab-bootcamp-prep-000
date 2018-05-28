@@ -85,9 +85,11 @@ function placeOrder(cardNumber) {
   }
   //otherwise
   else {
-    // return total cost and credit card number
-    return `Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`
-    //empty cart array
+    // store total in variable
+    var total = total();
+    // empty cart array
     cart = [];
+    // return total cost and credit card number
+    return `Your total cost is $${total}, which will be charged to the card ${cardNumber}.`
   }
 }
