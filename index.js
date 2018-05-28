@@ -85,10 +85,11 @@ function placeOrder(cardNumber) {
   }
   //otherwise
   else {
-    // return total cost and credit card number
+    // store total cost and credit card number in response variable
     var response = `Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`
     // empty cart array
     cart = [];
+    // return response
     return response;
   }
 }
