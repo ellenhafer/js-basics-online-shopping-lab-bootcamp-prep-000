@@ -69,7 +69,7 @@ function removeFromCart(item) {
     // if itemName === item
     if(cart[i].itemName === item){
       // remove item from cart array
-      
+      cart.splice(i, 1);
       // return updated cart
       return cart;
     }
