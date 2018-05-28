@@ -66,8 +66,6 @@ function total() {
 function removeFromCart(item) {
   // iterate through cart array
   for(let i = 0; i < cart.length; i++) {
-    console.log(cart[i].itemName);
-    console.log(item);
     // if itemName === item
     if(cart[i].itemName === item){
       console.log("Item is in cart");
