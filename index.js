@@ -87,6 +87,7 @@ function placeOrder(cardNumber) {
   else {
     // store total in variable
     var total = total();
+    console.log total;
     // empty cart array
     cart = [];
     // return total cost and credit card number
