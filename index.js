@@ -80,7 +80,7 @@ function removeFromCart(item) {
 
 function placeOrder(cardNumber) {
   //if no argument, print following
-  if(cardNumber === "") {
+  if(cardNumber === undefined) {
     return "Sorry, we don't have a credit card on file for you";
   }
   //otherwise
