@@ -79,5 +79,8 @@ function removeFromCart(item) {
 }
 
 function placeOrder(cardNumber) {
-  
+  //if no argument, print following
+  //otherwise
+  //empty cart array
+  // return total cost and credit card number
 }
