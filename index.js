@@ -80,6 +80,9 @@ function removeFromCart(item) {
 
 function placeOrder(cardNumber) {
   //if no argument, print following
+  if(cardNumber === "") {
+    return "Sorry, we don't have a credit card on file for you";
+  }
   //otherwise
   //empty cart array
   // return total cost and credit card number
