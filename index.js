@@ -73,10 +73,10 @@ function removeFromCart(item) {
       // return updated cart
       return cart;
     }
-    // else return 'that item is not in your cart'
-    else {
-      return "That item is not in your cart."
-    }
+  }
+  // else return 'that item is not in your cart'
+  else {
+    return "That item is not in your cart."
   }
 }
 
