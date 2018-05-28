@@ -51,13 +51,13 @@ function viewCart() {
   }
 }
 
-function total() {
+function total(x) {
   //create total variable to store running total
   var total = 0;
   //iterate through cart array
-  for(let i = 0; i < cart.length; i++) {
+  for(let i = 0; i < x.length; i++) {
     //add itemPrice of current item to total
-    total += cart[i].itemPrice;
+    total += x[i].itemPrice;
   }
   //once loop has finished, return total value
   return total;
@@ -85,9 +85,10 @@ function placeOrder(cardNumber) {
   }
   //otherwise
   else {
-    // return total cost and credit card number
-    return `Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`
     //empty cart array
     cart = [];
+    // return total cost and credit card number
+    return `Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`
+
   }
 }
