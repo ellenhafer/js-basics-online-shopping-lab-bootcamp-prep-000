@@ -51,13 +51,13 @@ function viewCart() {
   }
 }
 
-function total(x) {
+function total() {
   //create total variable to store running total
   var total = 0;
   //iterate through cart array
-  for(let i = 0; i < x.length; i++) {
+  for(let i = 0; i < cart.length; i++) {
     //add itemPrice of current item to total
-    total += x[i].itemPrice;
+    total += cart[i].itemPrice;
   }
   //once loop has finished, return total value
   return total;
